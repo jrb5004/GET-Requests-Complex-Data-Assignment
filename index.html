@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>National Park Lookup</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>National Park Lookup</h1>
+        <form class="part-lookup">
+            <label for="state-entry">Enter State Abbreviation(s) (ex. CA, NM):</label>
+            <input class="state-entry" type="text" required>
+            <br>
+            <br>
+            <label for="max-results">Enter Maximum Results to Return:</label>
+            <input class="max-results" type="number" value="10" multiple required>
+            <button type="submit">Get Results</button>
+        </form>
+        <p class="error-message"></p>
+        <section class="results hidden">
+            <h2>View Parks:</h2>
+            <ul class="results-list">
+            </ul>
+        </section>
+        <script src="index.js"></script>
+    </body>
+
+</html>
